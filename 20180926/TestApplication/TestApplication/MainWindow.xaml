@@ -32,11 +32,40 @@
     </StackPanel>
     <DataGrid Margin="5 0" AutoGenerateColumns="False" ItemsSource="{Binding Cities}">
       <DataGrid.Columns>
-        <DataGridTextColumn Header="{DynamicResource Table.Name}" Binding="{Binding Name}"/>
-        <DataGridTextColumn Header="{DynamicResource Table.Latitude}" Binding="{Binding Latitude}"/>
-        <DataGridTextColumn Header="{DynamicResource Table.Longitude}" Binding="{Binding Longitude}"/>
-        <DataGridTextColumn Header="{DynamicResource Table.Population}" Binding="{Binding Population}"/>
-        <DataGridTemplateColumn Header="{DynamicResource Table.Color}">
+        <DataGridTextColumn Binding="{Binding Name}">
+          <DataGridTextColumn.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{DynamicResource Table.Name}" />
+            </DataTemplate>
+          </DataGridTextColumn.HeaderTemplate>
+        </DataGridTextColumn>
+        <DataGridTextColumn Binding="{Binding Latitude}">
+          <DataGridTextColumn.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{DynamicResource Table.Latitude}" />
+            </DataTemplate>
+          </DataGridTextColumn.HeaderTemplate>
+        </DataGridTextColumn>
+        <DataGridTextColumn Binding="{Binding Longitude}">
+          <DataGridTextColumn.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{DynamicResource Table.Longitude}" />
+            </DataTemplate>
+          </DataGridTextColumn.HeaderTemplate>
+        </DataGridTextColumn>
+        <DataGridTextColumn Binding="{Binding Population}">
+          <DataGridTextColumn.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{DynamicResource Table.Population}" />
+            </DataTemplate>
+          </DataGridTextColumn.HeaderTemplate>
+        </DataGridTextColumn>
+        <DataGridTemplateColumn Header="{DynamicResource Table.}">
+          <DataGridTemplateColumn.HeaderTemplate>
+            <DataTemplate>
+              <TextBlock Text="{DynamicResource Table.Color}" />
+            </DataTemplate>
+          </DataGridTemplateColumn.HeaderTemplate>
           <DataGridTemplateColumn.CellTemplate>
             <DataTemplate>
               <Grid>

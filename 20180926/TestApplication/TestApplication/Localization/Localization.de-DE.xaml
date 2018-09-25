@@ -7,9 +7,9 @@
   <system:String x:Key="Load">Laden</system:String>
   <system:String x:Key="SelectLanguage">Sprache auswählen:</system:String>
 
-  <system:String x:Key="Table.Name">Name</system:String>
+  <!--<system:String x:Key="Table.Name">Name</system:String>
   <system:String x:Key="Table.Latitude">Breitengrad</system:String>
   <system:String x:Key="Table.Longitude">Längengrad</system:String>
   <system:String x:Key="Table.Population">Bevölkerung</system:String>
-  <system:String x:Key="Table.Color">Farbe</system:String>
+  <system:String x:Key="Table.Color">Farbe</system:String>-->
 </ResourceDictionary>
